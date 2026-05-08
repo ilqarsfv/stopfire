@@ -20,6 +20,11 @@ body {
   padding-top: 130px;
 }
 
+.page-layout-footer{
+  padding-left: 138px;
+  padding-right: 70px;
+}
+
 /* fixed left  icons */
 .icons-fixed {
   position: fixed;
@@ -455,7 +460,7 @@ footer {
     display: none;
   }
 
-   .page-layout {
+   .page-layout , .page-layout-footer {
     padding-left: 20px;
     padding-right: 20px;
   }
@@ -464,7 +469,7 @@ footer {
 
 /* title part */
 @media (max-width: 768px) {
-  .page-layout {
+  .page-layout, .page-layout-footer {
     padding-left: 24px;
     padding-right: 24px;
   }
@@ -740,7 +745,7 @@ footer {
 }
 
 @media (max-width: 420px) {
-  .page-layout {
+  .page-layout, .page-layout-footer {
     padding-left: 14px;
     padding-right: 14px;
   }
