@@ -19,6 +19,7 @@ body {
   padding-right: 70px;
   padding-top: 130px;
 }
+
 .page-layout-footer{
   padding-left: 138px;
   padding-right: 70px;
@@ -64,6 +65,7 @@ body {
   opacity: 0;
 }
 
+
 /* title */
 
 .title {
@@ -74,6 +76,7 @@ body {
   font-size: 14px;
   margin-bottom: 18px;
   margin-right: 30px;
+  text-transform: uppercase;
 }
 
 .title a {
@@ -103,64 +106,93 @@ hr {
   margin-bottom: 60px;
 }
 
-/* category */
-.category{
+
+/* contact-info */
+.contact-info {
   display: flex;
-  justify-content: space-between;
+  gap: 100px;
+  margin-top: 40px;
+  margin-bottom: 60px;
 }
-.c-left{
-  display: flex;
-  gap: 30px;
-}
-.c-left p:first-child {
-  font-size: 14px;
-  font-weight: 400;
-  letter-spacing: 1px;
-  text-transform: uppercase;
+.contact-info img{
+  margin-bottom: 30px;
 }
 
-.c-left p:last-child {
-  font-size: 14px;
-  color: #000;
-  font-weight: 600;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-}
-.c-left p.red:hover {
-  color: #ed1c24;
+.contact-info p{
+    font-size: 17px;
+    /* line-height: 24px; */
 }
 
 
-/* logo */
-.client-logos {
-  display: grid;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
-  gap: 80px 50px;
-  align-items: center;
+
+
+/* map */
+
+
+.map-box {
+  position: relative;
   width: 100%;
-  margin-top: 90px;
-  padding-right: 80px;
+  height: 460px;
 }
 
-.client-logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-width: 0;
-  min-height: 90px;
-}
-
-.client-logo img {
+.map-box iframe {
+  width: 100%;
+  height: 100%;
   display: block;
-  width: auto;
-  height: auto;
-  max-width: 170px;
-  max-height: 90px;
-  object-fit: contain;
+}
+
+.map-overlay {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  bottom: 30px;
+
+  width: 360px;
+  height: 90%;
+
+  background: rgba(255,255,255);
+  padding: 50px 70px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+
+}
+
+.map-item img {
+  margin-bottom: 26px;
+}
+
+.map-item p {
+  font-size: 17px;
+  line-height: 1.2;
 }
 
 
-/* footer */
+/* map sonu yazilar */
+.requisites {
+  margin-top: 60px;
+}
+
+.req-title {
+  font-weight: 700;
+  font-size: 12px;
+  margin-bottom: 20px;
+}
+
+.req-item {
+  font-size: 12px;
+  line-height: 1.5;
+  margin-bottom: 12px;
+}
+
+.req-item span {
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+
+
 /* footer */
 footer {
   display: flex;
@@ -168,7 +200,6 @@ footer {
   position: relative;
   margin-top: 150px;
   margin-right: -70px;
-  
 
 }
 
@@ -326,6 +357,47 @@ footer {
 
 
 
+
+
+/* underline animation */
+.line {
+  position: relative;
+  color: #000;
+  display: inline-block;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.line::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 100%;
+  height: 1px;
+  background: #000;
+
+  transform: scaleX(1);
+  transform-origin: left; 
+  transition: transform 0.4s ease;
+}
+
+.line:hover {
+  color: #ed1c24;
+}
+
+.line:hover::after {
+  transform: scaleX(0);
+  transform-origin: right;
+}
+
+
+
+
+
 /* animation */
 .link-anim {
   position: relative;
@@ -373,36 +445,13 @@ footer {
 
 
 
-/* tablet */
-@media (max-width: 1024px) {
-  .client-logos {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 60px 35px;
-  }
 
-  .client-logo img {
-    max-width: 120px;
-    max-height: 65px;
-  }
-}
+
+
+
 
 /* mobile */
-@media (max-width: 600px) {
-  .client-logos {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 45px 25px;
-    margin-top: 60px;
-  }
 
-  .client-logo {
-    min-height: 70px;
-  }
-
-  .client-logo img {
-    max-width: 110px;
-    max-height: 55px;
-  }
-}
 
 /* fixed part */
 @media (max-width: 1024px) {
@@ -411,7 +460,7 @@ footer {
     display: none;
   }
 
-   .page-layout, .page-layout-footer {
+   .page-layout , .page-layout-footer {
     padding-left: 20px;
     padding-right: 20px;
   }
@@ -420,7 +469,7 @@ footer {
 
 /* title part */
 @media (max-width: 768px) {
-  .page-layout , .page-layout-footer {
+  .page-layout, .page-layout-footer {
     padding-left: 24px;
     padding-right: 24px;
   }
@@ -466,70 +515,81 @@ footer {
   h1 {
     font-size: 26px;
   }
+
+  .contact-info{
+    display: block;
+  }
+    .contact-info div{
+    margin-bottom: 30px;
+    }
+    .contact-info img{
+    margin-bottom: 10px;
 }
+.contact-info p{
+    font-size: 18px;
+    /* line-height: 24px; */
+/* }
+.map-box {
+  height: 400px;
+  position:static;
+}
+.map-overlay{
+  position: static;
+} */
 
+}
+@media (max-width: 420px) {
+  .map-box {
+    height: auto;
+    position: static;
+  }
 
-/* categorty part */
-@media (max-width: 600px) {
-  .category {
+  .map-box iframe {
+    height: 300px;
+    width: 100%;
+    display: block;
+  }
+
+  .map-overlay {
+    position: static;
+    width: 100%;
+    height: auto;
+    padding: 5px 5px;
+    background: #fff;
+
+    margin-top: 30px;
+    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 28px;
-    text-align: center;
+    gap: 35px;
   }
 
-  .c-left {
-    flex-direction: column;
-    gap: 6px;
-    align-items: center;
+  .map-item p {
+    font-size: 16px;
+    line-height: 1.25;
   }
+
+  .map-item img {
+  margin-bottom: 16px;
+}
+
+  
+.req-title {
+  font-weight: 700;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.req-item {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 12px;
+}
+
 }
 
 
-@media (max-width: 1200px) {
-  .client-logos {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 70px 40px;
-  }
-}
 
-/* 4 → 3 */
-@media (max-width: 900px) {
-  .client-logos {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 60px 35px;
-  }
-
-  .client-logo img {
-    max-width: 140px;
-    max-height: 75px;
-  }
-}
-
-/* 3 → 2 mobile */
-@media (max-width: 600px) {
-  .client-logos {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 45px 25px;
-    margin-top: 60px;
-    padding-right: 0;
-
-  }
-
-  .client-logo {
-    min-height: 70px;
-    margin-right: 0;
-
-  }
-
-  .client-logo img {
-    max-width: 115px;
-    max-height: 60px;
-  }
-}
-
-
+/*  FOOTER RESPONSIVE   */
 
 @media (max-width: 768px) {
   footer {
@@ -722,3 +782,4 @@ footer {
 }
 
 
+}
