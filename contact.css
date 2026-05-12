@@ -1,11 +1,6 @@
-html,
 body {
-  min-height: 100%;
   overflow-x: hidden;
-  overflow-y: auto;
 }
-
-
 .header {
   position: fixed;
   top: 0;
@@ -23,6 +18,34 @@ body {
 .page-layout-footer{
   padding-left: 138px;
   padding-right: 70px;
+}
+
+
+
+.scroll-top {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  width: 58px;
+  height: 58px;
+  background: #ed1c24;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 28px;
+  cursor: pointer;
+  z-index: 999999;
+
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(20px);
+  transition: 0.3s ease;
+}
+
+.scroll-top.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
 }
 
 /* fixed left  icons */
@@ -444,6 +467,8 @@ footer {
 
 
 
+/* scroll-top */
+
 
 
 
@@ -528,16 +553,17 @@ footer {
 .contact-info p{
     font-size: 18px;
     /* line-height: 24px; */
-/* }
+ }
 .map-box {
   height: 400px;
   position:static;
 }
 .map-overlay{
   position: static;
-} */
+} 
 
 }
+
 @media (max-width: 420px) {
   .map-box {
     height: auto;
@@ -759,12 +785,13 @@ footer {
     gap: 26px 18px;
   }
 
-  
-
   .telegram-banner {
     padding: 18px 16px;
   }
 }
+
+
+
 
 @media (max-width: 768px) {
   .footer-ifr {
@@ -782,4 +809,3 @@ footer {
 }
 
 
-}

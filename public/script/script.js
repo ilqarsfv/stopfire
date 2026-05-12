@@ -1,42 +1,63 @@
-menuBox.addEventListener("click", function (e) {
-  e.preventDefault();
-  sideMenu.classList.add("active");
-});
+// const menuBox = document.querySelector(".menu-box");
+// const sideMenu = document.getElementById("sideMenu");
+// const closeMenu = document.getElementById("closeMenu");
 
-closeMenu.addEventListener("click", function () {
-  sideMenu.classList.remove("active");
-});
+// if (menuBox && sideMenu) {
+//   menuBox.addEventListener("click", function (e) {
+//     e.preventDefault();
+//     sideMenu.classList.add("active");
+//   });
+// }
 
-const submenuTriggers = document.querySelectorAll(".submenu-trigger");
+// if (closeMenu && sideMenu) {
+//   closeMenu.addEventListener("click", function () {
+//     sideMenu.classList.remove("active");
+//   });
+// }
 
-submenuTriggers.forEach((trigger) => {
-  trigger.addEventListener("click", function () {
-    const targetId = this.dataset.target;
-    const submenu = document.getElementById(targetId);
-    const isOpen = this.classList.contains("active");
+// const submenuTriggers = document.querySelectorAll(".submenu-trigger");
 
-    // əvvəl hamısını bağla
-    submenuTriggers.forEach((item) => {
-      item.classList.remove("active");
+// submenuTriggers.forEach((trigger) => {
+//   trigger.addEventListener("click", function () {
 
-      const itemSubmenu = document.getElementById(item.dataset.target);
-      if (itemSubmenu) {
-        itemSubmenu.classList.remove("active");
-      }
-    });
+//     const targetId = this.dataset.target;
+//     const submenu = document.getElementById(targetId);
+//     const isOpen = this.classList.contains("active");
 
-    // əgər kliklənən bağlı idisə, aç
-    if (!isOpen) {
-      this.classList.add("active");
-      submenu.classList.add("active");
-    }
-  });
-});
+//     submenuTriggers.forEach((item) => {
 
-// Horizontal scroll
-const scroll = document.getElementById("horizontalScroll");
+//       item.classList.remove("active");
 
-scroll.addEventListener("wheel", (e) => {
-  e.preventDefault();
-  horizontalScroll.scrollLeft += e.deltaY * 5;
-});
+//       const itemSubmenu =
+//         document.getElementById(item.dataset.target);
+
+//       if (itemSubmenu) {
+//         itemSubmenu.classList.remove("active");
+//       }
+
+//     });
+
+//     if (!isOpen && submenu) {
+//       this.classList.add("active");
+//       submenu.classList.add("active");
+//     }
+
+//   });
+// });
+
+// const scrollTopBtn = document.querySelector(".scroll-top");
+
+// window.addEventListener("scroll", () => {
+//   if (window.scrollY > 100) {
+//     scrollTopBtn.classList.add("active");
+//   } else {
+//     scrollTopBtn.classList.remove("active");
+//   }
+// });
+
+// scrollTopBtn.addEventListener("click", () => {
+//   window.scrollTo({
+//     top: 0,
+//     behavior: "smooth",
+//   });
+// });
