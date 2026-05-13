@@ -320,7 +320,7 @@ a {
 }
 
 .article_lr_link img {
-  width: 20px;
+  width: 12px;
 }
 
 .article_lr_link a {
@@ -464,6 +464,11 @@ a {
 .swiper-nav-btn.swiper-button-disabled {
   opacity: 0.2;
   cursor: default;
+}
+.view-all{
+  padding-top:20px  ;
+  color: #0000ee;
+  font-weight: bold;
 }
 /* FOOTER */
 
