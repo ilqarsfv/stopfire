@@ -272,18 +272,6 @@
       
 
       <section>
-        <div>
-          <div class="category">
-            <div class="c-left">
-              <p>Категории</p>
-              <p class="red">Все</p>
-            </div>
-
-            <div class="c-right">
-              <p class="line">Очистить фильтры</p>
-            </div>
-          </div>
-
           <div class="client-logos">
 
             <a href="#" class="client-logo">
@@ -372,9 +360,6 @@
 
             
           </div>
-        </div>
-
-        <p class="line" style="display: block; width: fit-content; margin: 80px auto 0;">Посмотреть еще</p>
       </section>
     </main>
 
@@ -486,6 +471,32 @@
         </div>
 
     </footer>
+
+    <button id="scrollTopBtn" class="scroll-top">
+      <i class="fa-solid fa-chevron-up"></i>
+    </button>
+
+
+    <script>
+      const scrollTopBtn = document.getElementById("scrollTopBtn");
+
+
+
+      window.addEventListener("scroll", function () {
+        if (window.scrollY > 200) {
+          scrollTopBtn.classList.add("show");
+        } else {
+          scrollTopBtn.classList.remove("show");
+        }
+      });
+
+      scrollTopBtn.addEventListener("click", function () {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth"
+        });
+      });
+    </script>
 
 
 
