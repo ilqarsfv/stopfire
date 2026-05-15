@@ -3,27 +3,30 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Stopfire</title> 
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/fancybox/fancybox.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
     
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/fancybox/fancybox.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
-    <!--<link rel="stylesheet" href="./public/css/style.css">  -->
-    <link rel="stylesheet" href="./public/css/certificates.css">
-    
-      
+    <link rel="stylesheet" href="./public/css/certificates.css" />
   </head>
   <body>
-    <!-- <header class="header">
+    <header class="header">
       <div class="header-inner">
         <div class="left">
           <a href="#" class="logo">
             <img
-              src="https://www.expomaster.ru/./public/photos/emg_logo.svg"
+              src="https://www.expomaster.ru/img/emg_logo.svg"
               alt="Expomaster Group"
             />
           </a>
 
-          <a href="#" class="menu-box">
+          <a href="#" class="menu-box" id="openMenu">
             <div class="menu-icon">
               <span></span>
               <span></span>
@@ -33,16 +36,18 @@
           </a>
 
           <nav class="nav">
-            <a class="active" href="#">Главная</a>
+            <a href="#">Главная</a>
 
             <div class="nav-item dropdown">
-              <a href="#">О компании <i class="fa-solid fa-caret-down"></i></a>
+              <a href="/stopfire/customer.html" class="active"
+                >О компании <i class="fa-solid fa-caret-down"></i
+              ></a>
 
               <div class="dropdown-menu">
                 <div class="dropdown-links">
                   <a href="#">Команда</a>
                   <a href="#">Вакансии</a>
-                  <a href="certificates.html">Сертификаты</a>
+                  <a href="#">Сертификаты</a>
                   <a href="#">Видео и презентации компании</a>
                   <a href="#">История компании</a>
                   <a href="#">Наши достижения</a>
@@ -157,10 +162,9 @@
           </div>
         </div>
       </div>
-    </header>  -->
+    </header>
 
-    <!-- menyu hissesi -->
-    <!--  <div class="side-menu" id="sideMenu">
+    <div class="side-menu" id="sideMenu">
       <button class="side-menu-close" id="closeMenu">
         <svg viewBox="0 0 24 24">
           <line x1="4" y1="4" x2="20" y2="20"></line>
@@ -240,9 +244,48 @@
           <a href="#">История компании</a>
         </div>
       </div>
-    </div>  -->
+    </div>
     <main>
       <div class="main-content">
+        <div class="icons-section">
+          <div class="icons-fixed">
+            <a href="#" class="social-icon">
+              <img class="normal" src="./public/photos/vk.png" alt="VK" />
+              <img class="hover" src="./public/photos/vk_h.png" alt="VK" />
+            </a>
+
+            <a href="#" class="social-icon">
+              <img
+                class="normal"
+                src="./public/photos/telegram.png"
+                alt="Telegram"
+              />
+              <img
+                class="hover"
+                src="./public/photos/telegram_h.png"
+                alt="Telegram"
+              />
+            </a>
+
+            <a href="#" class="social-icon">
+              <img class="normal" src="./public/photos/max.png" alt="Max" />
+              <img class="hover" src="./public/photos/max_h.png" alt="Max" />
+            </a>
+
+            <a href="#" class="social-icon">
+              <img
+                class="normal"
+                src="./public/photos/youtube-ico.svg"
+                alt="YouTube"
+              />
+              <img
+                class="hover"
+                src="./public/photos/youtube-ico-h.svg"
+                alt="YouTube"
+              />
+            </a>
+          </div>
+        </div>
         <div class="breadcrumbs">
           <span class="breadcrumbs_item">
             <a href="/">Главная</a>
@@ -255,102 +298,253 @@
         <div class="sc-second-page">
           <h1 class="h1">Сертификаты</h1>
         </div>
-         <div class="ss-items">
- 
-            <a href=" https://www.expomaster.ru/upload/iblock/5ca/5ca0ce756ef2247a09a7572d5838414e.png"
-               data-fancybox="gallery"
-               data-caption="Система менеджмента качества"
-               class="ss-itm">
-              <span class="ss-i-image">
-                <img src="https://www.expomaster.ru/upload/resize_cache/iblock/5ca/180_200_1/5ca0ce756ef2247a09a7572d5838414e.png" alt="Сертификат соответствия (2) EXPOMASTER GROUP">
-              </span>
-              <p class="ss-i-descr">Система менеджмента качества</p>
-            </a>
- 
-             <a href="https://www.expomaster.ru/upload/iblock/b46/b464229b81be4e20fa58f8ede0db1cc6.png"
-               data-fancybox="gallery"
-               data-caption="Свидетельство на товарный знак"
-               class="ss-itm">
-              <span class="ss-i-image">
-                <img src="https://www.expomaster.ru/upload/resize_cache/iblock/b46/180_200_1/b464229b81be4e20fa58f8ede0db1cc6.png"
-                     alt="Свидетельство (2) EXPOMASTER GROUP">
-              </span>
-              <p class="ss-i-descr">Свидетельство на товарный знак</p>
-            </a>
- 
-            <a href="https://www.expomaster.ru/upload/iblock/5ed/5ed1bae13463001d5bc2d7219a446a0e.jpg"
-               data-fancybox="gallery"
-               data-caption="Свидетельство о членстве в СРО СВЗ"
-               class="ss-itm">
-              <span class="ss-i-image">
-                <img src="https://www.expomaster.ru/upload/resize_cache/iblock/5ed/180_200_1/5ed1bae13463001d5bc2d7219a446a0e.jpg"
-                     alt="Свидетельство EXPOMASTER GROUP">
-              </span>
-              <p class="ss-i-descr">Свидетельство о членстве в СРО СВЗ</p>
-            </a>
- 
-            <a href="https://www.expomaster.ru/upload/iblock/9b9/9b9a96872514ec9ba043c2bb3d83435f.png"
-               data-fancybox="gallery"
-               data-caption="CONFORMANCE QUALITY MANAGEMENT SYSTEM"
-               class="ss-itm">
-              <span class="ss-i-image">
-                <img src="https://www.expomaster.ru/upload/resize_cache/iblock/9b9/180_200_1/9b9a96872514ec9ba043c2bb3d83435f.png"
-                     alt="Сертификат (2) EXPOMASTER GROUP">
-              </span>
-              <p class="ss-i-descr">CONFORMANCE QUALITY MANAGEMENT SYSTEM</p>
-            </a>
- 
-            <a href="https://www.expomaster.ru/upload/iblock/5fe/5fef751f3c11be284eb03155b98fe3f4.png"
-               data-fancybox="gallery"
-               data-caption="Разрешение на применение знака соответствия"
-               class="ss-itm">
-              <span class="ss-i-image">
-                <img src="https://www.expomaster.ru/upload/resize_cache/iblock/5fe/180_200_1/5fef751f3c11be284eb03155b98fe3f4.png"
-                     alt="Разрешение EXPOMASTER GROUP">
-              </span>
-              <p class="ss-i-descr">Разрешение на применение знака соответствия</p>
-            </a>
- 
-            <a href="https://www.expomaster.ru/upload/iblock/8c2/8c29772acd64462526f2fd05dbac86b0.png"
-               data-fancybox="gallery"
-               data-caption="Сертификат соответствия системы менеджмента"
-               class="ss-itm">
-              <span class="ss-i-image">
-                <img src="https://www.expomaster.ru/upload/resize_cache/iblock/8c2/180_200_1/8c29772acd64462526f2fd05dbac86b0.png"
-                     alt="Сертификат соответствия EXPOMASTER GROUP">
-              </span>
-              <p class="ss-i-descr">Сертификат соответствия системы менеджмента</p>
-            </a>
- 
-            <a href="https://www.expomaster.ru/upload/iblock/f69/f69d45ad2ab74fb1b29ccffe749f48ac.png"
-               data-fancybox="gallery"
-               data-caption="Сертификат эксперта-аудитора"
-               class="ss-itm">
-              <span class="ss-i-image">
-                <img src="https://www.expomaster.ru/upload/resize_cache/iblock/f69/180_200_1/f69d45ad2ab74fb1b29ccffe749f48ac.png"
-                     alt="Сертификат эксперта-аудитора EXPOMASTER GROUP">
-              </span>
-              <p class="ss-i-descr">Сертификат эксперта-аудитора</p>
-            </a>
- 
-            <a href="https://www.expomaster.ru/upload/iblock/51b/51bdb3f64c3c1e679d593a8fda11cc62.png"
-               data-fancybox="gallery"
-               data-caption="Conformance certificate"
-               class="ss-itm">
-              <span class="ss-i-image">
-                <img src="https://www.expomaster.ru/upload/resize_cache/iblock/51b/180_200_1/51bdb3f64c3c1e679d593a8fda11cc62.png"
-                     alt="Сертификат EXPOMASTER GROUP">
-              </span>
-              <p class="ss-i-descr">Conformance certificate</p>
-            </a> 
- 
-          </div>
+        <div class="ss-items">
+          <a
+            href=" https://www.expomaster.ru/upload/iblock/5ca/5ca0ce756ef2247a09a7572d5838414e.png"
+            data-fancybox="gallery"
+            data-caption="Система менеджмента качества"
+            class="ss-itm"
+          >
+            <span class="ss-i-image">
+              <img
+                src="https://www.expomaster.ru/upload/resize_cache/iblock/5ca/180_200_1/5ca0ce756ef2247a09a7572d5838414e.png"
+                alt="Сертификат соответствия (2) EXPOMASTER GROUP"
+              />
+            </span>
+            <p class="ss-i-descr">Система менеджмента качества</p>
+          </a>
+
+          <a
+            href="https://www.expomaster.ru/upload/iblock/b46/b464229b81be4e20fa58f8ede0db1cc6.png"
+            data-fancybox="gallery"
+            data-caption="Свидетельство на товарный знак"
+            class="ss-itm"
+          >
+            <span class="ss-i-image">
+              <img
+                src="https://www.expomaster.ru/upload/resize_cache/iblock/b46/180_200_1/b464229b81be4e20fa58f8ede0db1cc6.png"
+                alt="Свидетельство (2) EXPOMASTER GROUP"
+              />
+            </span>
+            <p class="ss-i-descr">Свидетельство на товарный знак</p>
+          </a>
+
+          <a
+            href="https://www.expomaster.ru/upload/iblock/5ed/5ed1bae13463001d5bc2d7219a446a0e.jpg"
+            data-fancybox="gallery"
+            data-caption="Свидетельство о членстве в СРО СВЗ"
+            class="ss-itm"
+          >
+            <span class="ss-i-image">
+              <img
+                src="https://www.expomaster.ru/upload/resize_cache/iblock/5ed/180_200_1/5ed1bae13463001d5bc2d7219a446a0e.jpg"
+                alt="Свидетельство EXPOMASTER GROUP"
+              />
+            </span>
+            <p class="ss-i-descr">Свидетельство о членстве в СРО СВЗ</p>
+          </a>
+
+          <a
+            href="https://www.expomaster.ru/upload/iblock/9b9/9b9a96872514ec9ba043c2bb3d83435f.png"
+            data-fancybox="gallery"
+            data-caption="CONFORMANCE QUALITY MANAGEMENT SYSTEM"
+            class="ss-itm"
+          >
+            <span class="ss-i-image">
+              <img
+                src="https://www.expomaster.ru/upload/resize_cache/iblock/9b9/180_200_1/9b9a96872514ec9ba043c2bb3d83435f.png"
+                alt="Сертификат (2) EXPOMASTER GROUP"
+              />
+            </span>
+            <p class="ss-i-descr">CONFORMANCE QUALITY MANAGEMENT SYSTEM</p>
+          </a>
+
+          <a
+            href="https://www.expomaster.ru/upload/iblock/5fe/5fef751f3c11be284eb03155b98fe3f4.png"
+            data-fancybox="gallery"
+            data-caption="Разрешение на применение знака соответствия"
+            class="ss-itm"
+          >
+            <span class="ss-i-image">
+              <img
+                src="https://www.expomaster.ru/upload/resize_cache/iblock/5fe/180_200_1/5fef751f3c11be284eb03155b98fe3f4.png"
+                alt="Разрешение EXPOMASTER GROUP"
+              />
+            </span>
+            <p class="ss-i-descr">
+              Разрешение на применение знака соответствия
+            </p>
+          </a>
+
+          <a
+            href="https://www.expomaster.ru/upload/iblock/8c2/8c29772acd64462526f2fd05dbac86b0.png"
+            data-fancybox="gallery"
+            data-caption="Сертификат соответствия системы менеджмента"
+            class="ss-itm"
+          >
+            <span class="ss-i-image">
+              <img
+                src="https://www.expomaster.ru/upload/resize_cache/iblock/8c2/180_200_1/8c29772acd64462526f2fd05dbac86b0.png"
+                alt="Сертификат соответствия EXPOMASTER GROUP"
+              />
+            </span>
+            <p class="ss-i-descr">
+              Сертификат соответствия системы менеджмента
+            </p>
+          </a>
+
+          <a
+            href="https://www.expomaster.ru/upload/iblock/f69/f69d45ad2ab74fb1b29ccffe749f48ac.png"
+            data-fancybox="gallery"
+            data-caption="Сертификат эксперта-аудитора"
+            class="ss-itm"
+          >
+            <span class="ss-i-image">
+              <img
+                src="https://www.expomaster.ru/upload/resize_cache/iblock/f69/180_200_1/f69d45ad2ab74fb1b29ccffe749f48ac.png"
+                alt="Сертификат эксперта-аудитора EXPOMASTER GROUP"
+              />
+            </span>
+            <p class="ss-i-descr">Сертификат эксперта-аудитора</p>
+          </a>
+
+          <a
+            href="https://www.expomaster.ru/upload/iblock/51b/51bdb3f64c3c1e679d593a8fda11cc62.png"
+            data-fancybox="gallery"
+            data-caption="Conformance certificate"
+            class="ss-itm"
+          >
+            <span class="ss-i-image">
+              <img
+                src="https://www.expomaster.ru/upload/resize_cache/iblock/51b/180_200_1/51bdb3f64c3c1e679d593a8fda11cc62.png"
+                alt="Сертификат EXPOMASTER GROUP"
+              />
+            </span>
+            <p class="ss-i-descr">Conformance certificate</p>
+          </a>
         </div>
       </div>
     </main>
+    <footer>
+        <div class="footer-left">
+          <h2 class="footer-title">
+            Закажите <span class="link-anim">стенд online</span><br />
+            или приезжайте в гости
+          </h2>
+
+          <div class="footer-info">
+            <div class="info-item">
+              <i class="fa-solid fa-location-dot" style="color: #ddd"></i>
+              <span>Адрес:</span>
+              <p>121354, Москва,<br />Дорогобужская, д.14,<br />стр.6</p>
+            </div>
+
+            <div class="info-item">
+              <i class="fa-solid fa-location-dot" style="color: #ddd"></i>
+              <span>Тел/факс:</span>
+              <p class="red">+7 (495) 642-97-34</p>
+            </div>
+
+            <div class="info-item">
+              <i class="fa-solid fa-location-dot" style="color: #ddd"></i>
+              <span>E-mail:</span>
+              <p class="red">info@expomaster.ru</p>
+            </div>
+          </div>
+
+          <div class="footer-card">
+            <div class="link-anim">
+              <a href="#" style="font-size: 13px">На карту</a>
+            </div>
+
+            <div class="footer-extra">
+              <div class="footer-socials">
+                <img
+                  src="https://www.expomaster.ru/img/Frame%20(7).svg"
+                  alt="VK"
+                />
+
+                <img
+                  src="https://www.expomaster.ru/img/Frame%20(8).svg"
+                  alt="Telegram"
+                />
+
+                <img src="https://www.expomaster.ru/img/max_h.png" alt="Max" />
+
+                <img
+                  src="https://www.expomaster.ru/img/youtube_ico.png"
+                  alt="YouTube"
+                />
+              </div>
+
+              <div class="footer-ifr">
+                <iframe
+                  src="https://yandex.ru/sprav/widget/rating-badge/135358428186"
+                  width="150"
+                  height="50"
+                  frameborder="0"
+                >
+                </iframe>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer-bottom">
+            <div>
+              <span>Приём заявок:</span>
+              <p>пн-пт с 9:30 до 18:00</p>
+            </div>
+
+            <div>
+              <span>Работа склада:</span>
+              <p>ежедневно с 8:00 до 20:00</p>
+            </div>
+
+            <div>
+              <p>© 2026 EXPOMASTER GROUP</p>
+              <a href="#">Карта сайта</a>
+            </div>
+          </div>
+
+          <div
+            class="footer-links"
+            style="display: flex; gap: 10px; flex-wrap: wrap"
+          >
+            <a href="">Политика в отношении обработки персональных данных</a>
+            <a href="">Согласие на обработку персональных данных</a>
+
+            <p>
+              Персональные данные опубликованы на сайте при наличии правовых
+              оснований в соответствии с ч. 1 ст. 6 и ст. 10.1 152-ФЗ.Субъектами
+              установлены запреты на обработку неограниченным кругом лиц
+              опубликованных персональных данных.
+            </p>
+          </div>
+
+          <div class="telegram-banner">
+            <span class="tg-text">
+              Все о производстве выставочных стендов в нашем Телеграм канале
+            </span>
+
+            <div class="tg-right">
+              <span class="tg-icon"
+                ><i
+                  class="fa-brands fa-telegram"
+                  style="color: rgb(0, 0, 0)"
+                ></i
+              ></span>
+              <a href="#">ПОДПИСАТЬСЯ</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-right">
+          <img src="https://www.expomaster.ru/img/sc1.png" alt="" />
+        </div>
+      </footer>
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/fancybox/fancybox.umd.js"></script>
-    <script src="./public/script/script.js"></script>
-<script src="./public/script/certificatesfancy.js"></script>
+    <script src="./public/script/fancy.js"></script>
+    <script src="./public/script/certificates.js"></script>
 
   </body>
 </html>
