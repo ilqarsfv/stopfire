@@ -1,11 +1,6 @@
-html,
 body {
-  min-height: 100%;
   overflow-x: hidden;
-  overflow-y: auto;
 }
-
-
 .header {
   position: fixed;
   top: 0;
@@ -19,9 +14,38 @@ body {
   padding-right: 70px;
   padding-top: 130px;
 }
+
 .page-layout-footer{
   padding-left: 138px;
   padding-right: 70px;
+}
+
+
+
+.scroll-top {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  width: 58px;
+  height: 58px;
+  background: #ed1c24;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 28px;
+  cursor: pointer;
+  z-index: 999999;
+
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(20px);
+  transition: 0.3s ease;
+}
+
+.scroll-top.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
 }
 
 /* fixed left  icons */
@@ -64,6 +88,8 @@ body {
   opacity: 0;
 }
 
+
+
 /* title */
 
 .title {
@@ -103,32 +129,7 @@ hr {
   margin-bottom: 60px;
 }
 
-/* category */
-.category{
-  display: flex;
-  justify-content: space-between;
-}
-.c-left{
-  display: flex;
-  gap: 30px;
-}
-.c-left p:first-child {
-  font-size: 14px;
-  font-weight: 400;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-}
 
-.c-left p:last-child {
-  font-size: 14px;
-  color: #000;
-  font-weight: 600;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-}
-.c-left p.red:hover {
-  color: #ed1c24;
-}
 
 
 /* logo */
@@ -138,7 +139,7 @@ hr {
   gap: 80px 50px;
   align-items: center;
   width: 100%;
-  margin-top: 90px;
+  margin-top: 60px;
   padding-right: 80px;
 }
 
@@ -168,8 +169,6 @@ footer {
   position: relative;
   margin-top: 150px;
   margin-right: -70px;
-  
-
 }
 
 .footer-left {
@@ -370,9 +369,6 @@ footer {
   transform: scaleX(0); /* qırmızı silinir */
 }
 
-
-
-
 /* tablet */
 @media (max-width: 1024px) {
   .client-logos {
@@ -387,11 +383,11 @@ footer {
 }
 
 /* mobile */
-@media (max-width: 600px) {
+/* @media (max-width: 600px) {
   .client-logos {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 45px 25px;
-    margin-top: 60px;
+    margin-top: 30px;
   }
 
   .client-logo {
@@ -402,7 +398,7 @@ footer {
     max-width: 110px;
     max-height: 55px;
   }
-}
+} */
 
 /* fixed part */
 @media (max-width: 1024px) {
@@ -469,23 +465,6 @@ footer {
 }
 
 
-/* categorty part */
-@media (max-width: 600px) {
-  .category {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 28px;
-    text-align: center;
-  }
-
-  .c-left {
-    flex-direction: column;
-    gap: 6px;
-    align-items: center;
-  }
-}
-
 
 @media (max-width: 1200px) {
   .client-logos {
@@ -512,7 +491,7 @@ footer {
   .client-logos {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 45px 25px;
-    margin-top: 60px;
+    margin-top: 30px;
     padding-right: 0;
 
   }
