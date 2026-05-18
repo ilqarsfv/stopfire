@@ -1,0 +1,184 @@
+.main-content a{
+  text-decoration: none;
+  color: inherit;
+}
+.main-content {
+  padding-top: 40px;
+  padding-left: 30px;
+}
+/*       breadcrumbs      */
+.breadcrumbs {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+.breadcrumbs_item {
+  display: block;
+  position: relative;
+  color: #000;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 22px;
+  font-family: Arial, sans-serif;
+  text-transform: uppercase;
+  padding-left: 40px;
+  letter-spacing: 1.1px;
+  margin-bottom: 30px;
+  margin-right: 30px;
+  max-width: 1000px;
+}
+.breadcrumbs_item::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  height: 34px;
+  width: 2px;
+  background: #ed1c24;
+  transform: skewX(-13deg) translateY(-50%);
+}
+
+.breadcrumbs_item a:hover {
+  color: #ed1c24;
+}
+.breadcrumbs_item:last-child {
+  color: #ed1c24;
+}
+/*       breadcrumbs      */
+/*   head  */
+.sc-second-page {
+  padding: 0 0 70px 0;
+  border-bottom: 1px solid #e0e0e0;
+  margin-bottom: 64px;
+}
+.ss-p {
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 20px;
+  line-height: 34px;
+  font-family: Arial, sans-serif;
+  margin-bottom: 110px;
+  letter-spacing: 0.5px;
+  max-width: 1500px;
+}
+/*head*/
+/*   certificates   */
+.s-serti {
+  padding-bottom: 60px;
+}
+ 
+.ss-p {
+  font-size: 15px;
+  line-height: 1.8;
+  color: #333;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  max-width: 100%;
+}
+ 
+
+.ss-items {
+  display: grid;
+  grid-template-columns:  2fr 2fr;
+  max-width:1400px;
+   padding:0 40px;
+   margin: 0 auto;
+   max-width: 1300px;
+   gap: 30px;
+  
+   
+}
+ 
+
+/* ─── Kart ─── */
+.ss-itm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  cursor: pointer;
+  
+  
+}
+ 
+
+
+.ss-i-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  padding: 24px 20px;
+  min-height: 200px;
+}
+ 
+.ss-i-image img {
+  max-width: 100%;
+  max-height: 180px;
+  object-fit: contain;
+  display: block;
+  transition: transform 0.35s ease;
+}
+ 
+
+ 
+
+.ss-i-descr {
+  display: block;
+  border: 1px solid #111;
+  padding: 20px 18px;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #111111;
+  line-height: 1.5;
+  background: #ffffff;
+  transition: border-color 0.25s ease, color 0.25s ease;
+  padding: 45px 15px 65px 35px;
+}
+
+
+.ss-itm:hover .ss-i-descr {
+  border-color: #ed1c24;  
+}
+.ss-itm p{
+  width: 400px;
+  font-size: 15px;
+}
+/* ─── Kart ─── */
+ 
+
+@media (max-width: 1024px) {
+  .breadcrumbs_item {
+    font-size: 12px !important;
+    padding-left: 20px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    line-height: 1.25;
+  }
+  .sc-second-page {
+    padding: 0 0 30px 0;
+    border-bottom: 1px solid #e0e0e0;
+    margin-bottom: 40px;
+  }
+  .breadcrumbs_item::before {
+    height: 20px;
+    width: 1px;
+  }
+  .ss-p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .ss-items {
+    grid-template-columns: 1fr;
+  }
+  .ss-i-descr {
+ 
+  padding: 20px 15px;
+}
+ 
+
+}
+/* fancy css */
+ 
+/* fancy css */
